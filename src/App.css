@@ -1,0 +1,99 @@
+.App {
+    width:100%;
+    height:100vh;
+	display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.header{
+    width:100%;
+    position: fixed;
+    top:0;
+    padding:0.5rem 1rem ;
+    display:flex;
+    background: #218380;
+    justify-content:space-between;
+    color:white;
+    
+}
+
+.header p{
+    margin:1.2rem
+}
+.header .highscores{
+    cursor: pointer;
+}
+
+.menu,
+.quiz,
+.endscreen,
+.highscores-page{
+  width:50%;
+  height:50vh;
+  padding:1rem 2rem;
+  background:whitesmoke;
+  border-radius:10px;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  box-shadow: 7px 7px 11px 4px rgba(0,0,0,0.69);
+-webkit-box-shadow: 7px 7px 11px 4px rgba(0,0,0,0.69);
+-moz-box-shadow: 7px 7px 11px 4px rgba(0,0,0,0.69);
+ 
+}
+
+.menu button{
+    margin:0.6rem 0;
+    align-self:start;
+    background : #218380;
+    padding:0.6rem 1rem;
+    border-radius:10px;
+    cursor: pointer;
+    outline:none;
+    color:white;
+}
+
+.menu button:hover{
+    color:#218380;
+    /* border:1px solid #218380; */
+    background: white;
+}
+
+
+
+
+.quiz .options{
+    flex:1;
+display:flex;
+flex-direction:column;
+justify-content:space-evenly;
+
+}
+.options button{
+
+padding:0.6rem;
+background:#218380;
+color:white;
+border-radius:10px;
+}
+.endscreen input,button{
+    margin:0.6rem 0;
+    padding:0.6rem;
+}
+
+.endscreen button{
+    background: #218380;
+    color:white;
+}
+
+@media screen and (max-width: 768px){
+    .menu,
+.quiz,
+.endscreen,
+.highscores-page{
+    width:80%;
+    /* height:0vh; */
+}
+}
